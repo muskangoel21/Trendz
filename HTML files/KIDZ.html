@@ -1,0 +1,497 @@
+<html>
+<title>kids</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body >
+<style>
+.filterDiv {
+  float: left;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 120px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container1 {
+  margin-top: 20px;
+  }
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.card 	{
+  	  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  	  	width: 300px;
+   	  	text-align:center;
+  	  	font-size:16px;
+  	  	font-family:sans-serif;
+   	  	float:left;
+  	  	color: black;
+		background-color:white;
+  	  	margin:25px;
+  	  	display:inline-block;
+		transform-style: preserve-3d;
+                transition: all 1.5s ease;
+		border-radius: 20px;
+ height: 260px;  
+    vertical-align: bottom;
+    display: table-cell;
+	}
+
+.card:hover 
+	{
+  	  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		
+		
+	}
+.thefront{
+		position: absolute;
+ 		width: 300px;
+		height:300px;
+              
+	}
+.containers {
+   margin-top:5px;
+    text-align:left;
+    text-align:top;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.row {
+
+    margin-top: 10px;
+  list-style: none;
+font-size:20px;
+}
+
+.row li{
+    display: inline-block;
+}
+.row li a{
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family:"Roboto";
+    font-size: 15px;
+}
+.row li.active a{
+   border: 1px pink;
+}
+.logo h1{
+color: red;
+font-size: 50px;
+font-family: Mistral;
+margin-left:10px
+}
+.navbar{
+overflow:hidden;
+max-width: 1200px;
+
+margin: auto;
+background-color:lavender;
+}
+
+.navbar a{
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: cyan;
+  overflow: hidden;
+  width: 100%;
+  height: 20%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 30%;
+}
+
+.text {
+  color: white;
+  font-family: Mistral;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.abc
+{
+
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: arial;
+  margin: 0;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.font
+{
+font-size:30px;
+}
+</style>
+
+
+
+<header>
+<marquee style="font-family:mistral; font-size:50px; color:Dark blue;" >Don't follow trends , start TRENDZ..!!</marquee>
+</header>
+<hr>
+
+
+
+<div class="navbar">
+
+<ul class="row"
+> 
+<li>
+<a href="trendz.html"><i class="fa fa-home" style="font-size:35px;"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a> </li>
+<li><div class="dropdown">
+    <label><i class="fa fa-filter" align="right"></i></label>
+     <a href="kfilter.html" ><b class="font">Filters</b></a>
+    
+</label>
+     </div> </li>
+</ul>
+</div>
+<hr>
+<script>
+function f2()
+{
+window.location="5.html";
+}
+</script>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+<div class="wrap">
+        <div class="card">
+		<div class="thefront">
+			<img src="g1.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbspRs.349&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                                <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+           </div>
+     <div class="card">
+		<div class="thefront">
+			<img src="g2.jpg"width:90% height=70%>
+  			<div class="containers">
+                    <b>&nbspRs.459&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+       </div>
+
+      <div class="card">
+		<div class="thefront">
+			<img src="g3.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbspRs.1699&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+
+<div class="card">
+		<div class="thefront">
+			<img src="g4.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.1799&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                       <a href="buy.html">  <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+
+<div class="card">
+		<div class="thefront">
+			<img src="g5.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbspRs.499&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+
+<div class="card">
+		<div class="thefront">
+			<img src="g6.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.1249 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+
+<div class="card">
+		<div class="thefront">
+			<img src="g7.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.699&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="g8.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.2789&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                       <a href="buy.html">  <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="g9.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.349&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="g10.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.1359&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="b1.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.899&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="b2.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.499&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="b3.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.1499&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="b4.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.1899&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="b5.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.350&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="b6.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.799&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="b7.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.1999&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+<div class="card">
+		<div class="thefront">
+			<img src="b8.jpg" width:90% height=70%>
+  			<div class="containers">
+                    		<b>&nbsp Rs.1699&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+                        <a href="buy.html"> <input type="submit" value="Buy Now"></a>
+  			</div>	
+		</div>
+	
+       	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

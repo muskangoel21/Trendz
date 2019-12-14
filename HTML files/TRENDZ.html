@@ -1,0 +1,283 @@
+<html>
+<title>Trendz</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.mySlides 
+{
+display:none;
+ margin-left:auto;
+  margin-right:auto;
+}
+.wrap	{
+		display:inline-block;
+		border:1px solid black;
+	  	width:75%;
+		margin-left:12.5%;
+		color: white;
+	  	
+	}
+
+.card 	{
+  	  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  	  	width: 300px;
+   	  	text-align:center;
+  	  	font-size:16px;
+  	  	font-family:sans-serif;
+   	  	float:left;
+  	  	color: black;
+		background-color:white;
+  	  	margin:25px;
+  	  	display:inline-block;
+		transform-style: preserve-3d;
+                transition: all 1.5s ease;
+		border-radius: 20px;
+	}
+
+.card:hover 
+	{
+  	  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		transform: rotateY(45deg);
+		
+	}
+.theback{
+		poisition: absolute;
+		width: 300px;
+		height:300px;
+		backface-visibility: hidden;
+		transform: rotateY(180deg);
+	}
+.thefront{
+		position: absolute;
+ 		width: 300px;
+		height:300px;
+		backface-visibility: hidden;
+	}
+.containers {
+    padding: 2px 16px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+font-size:200px;
+color:black;
+font-family:Mistral;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.row {
+
+  float: right;
+
+  margin-top: 10px;
+  list-style: none;
+font-size:20px;
+}
+
+.row li{
+    display: inline-block;
+}
+.row li a{
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family:"Roboto";
+    font-size: 15px;
+}
+.row li.active a{
+   border: 1px pink;
+}
+.logo h1{
+color: red;
+font-size: 50px;
+font-family: Mistral;
+margin-left:10px
+}
+.navbar{
+overflow:hidden;
+max-width: 1200px;
+
+margin: auto;
+background-color:white;
+}
+
+.navbar a{
+
+}
+.navbar a:hover{
+background-color:cyan;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: cyan;
+  overflow: hidden;
+  width: 100%;
+  height: 20%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 30%;
+}
+
+.text {
+  color: white;
+  font-family: Mistral;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.i
+{
+   height:50px;
+   width:50px;
+}
+
+</style>
+
+
+<script>
+function f1()
+{
+window.location="login1.html";
+}
+</script>
+
+ 
+<div class="navbar">
+
+<ul class="row"
+> 
+<li><img src="logo2.png" alt="Home" width=30% height=20%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</li>
+<li>
+<a href="trendz.html"><i class="fa fa-home" style="font-size:35px;"></i></a></li>
+<li><p id="demo" onclick="f1()" <b>LOGIN &nbsp&nbsp&nbsp&nbsp</b></p></li>
+<li><div class="abc">
+     <li><a href="https://www.google.com"> <input  type="text" placeholder="search.."><i class="fa fa-search w3-margin-right"> </i></a></li>
+</div></li>
+</ul>
+</div>
+
+
+<div class="container">
+  <img class="mySlides" src="int1.jpg" style="width:82%; height:105% ">
+  <img class="mySlides" src="shop.jpg" style="width:82%; height:105% ">
+  <div class="overlay">
+    <div class="text">TRENDZ</div>
+  </div>
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); 
+}
+</script>
+
+
+
+
+
+<div class="wrap">
+        <div class="card">
+		<div class="thefront">
+			<img src="kids2.jpg" style="width:100%">
+  			<div class="containers">
+                    	<a href="KIDZ.html"><h4>KIDS WEAR</h4></a>
+  			</div>	
+		</div>
+        <div class="theback">
+                        <div class="container">
+    				<li>
+                                  <ul><a href="kidz2.html">Winter wear</a></ul>
+                                  <ul><a href="background.html">Summer wear</a></ul>
+                                  <ul><a href="background.html">Foot wear</a></ul>
+                                </li>
+       			</div>
+                
+        	</div>
+       </div>
+      <div class="card">
+		<div class="thefront">
+			<img src="women.jpg" width:100% height:80%>
+  			<div class="containers">
+                    		<a href="women.html"><h4>WOMEN WEAR</h4></a>
+  			</div>	
+		</div>
+        <div class="theback">
+                        <div class="container">
+       		               <li>
+                                  <ul><a href="background.html">Winter wear</a></ul>
+                                  <ul><a href="background.html">Summer wear</a></ul>
+                                  <ul><a href="background.html">Foot wear</a></ul>
+                                </li>
+       			</div>
+                
+        	</div>
+       </div>
+       <div class="card">
+		<div class="thefront">
+			<img src="men.jpg" style="width:100%">
+  			<div class="containers">
+                    	<a href="men.html"><h4>MEN WEAR</h4></a>
+  			</div>	
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<li>
+                                  <ul><a href="background.html">Winter wear</a></ul>
+                                  <ul><a href="background.html">Summer wear</a></ul>
+                                  <ul><a href="background.html">Foot wear</a></ul>
+                                </li>
+       			</div>
+       		</div>
+       	</div>
+</div>
+
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Email: <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="w3-hover-text-green">TRENDZ</a></p>
+<p> Contact: 9877789990</p>
+
+</footer>
+  
+
+</body>
+</html>
